@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que precisa para seu Projeto Car</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="https://preview.redd.it/what-did-car-see-v0-kv4nxyjjv1kd1.jpeg?width=640&crop=smart&auto=webp&s=6b2f0de3f02687bf550c9cab4f19a8d8d1f3732e"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="https://pbs.twimg.com/media/GSpNQdxW0AEuLLR.jpg"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="https://media.printables.com/media/prints/947436/images/7232608_a979e4fb-94c3-496e-994c-2a47b6832abd_af3aa76b-3142-4978-9ac3-f2bf50202975/20240716_231803.jpg" alt="Livro sobre javascript assertivo da alura books">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Guia Front-end.svg" alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Portugol.svg" alt="Livro sobre portugol" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Acessibilidade.svg" alt="Livro sobre acessibilidade" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Garn47</h2>
+          <p class="descrição__texto">
+            Um Gato muito maneiro
+          </p>
+        </div>
+        <img src="https://media.tenor.com/W1SK2wqMcw8AAAAe/garn47-car.png" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="https://preview.redd.it/what-did-car-see-v0-kv4nxyjjv1kd1.jpeg?width=640&crop=smart&auto=webp&s=6b2f0de3f02687bf550c9cab4f19a8d8d1f3732e"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="https://pbs.twimg.com/media/GSpNQdxW0AEuLLR.jpg" alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide"><img src="https://media.printables.com/media/prints/947436/images/7232608_a979e4fb-94c3-496e-994c-2a47b6832abd_af3aa76b-3142-4978-9ac3-f2bf50202975/20240716_231803.jpg" alt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+        <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autor do Mês</h3>
+          <h2 class="descrição__titulo-livro">Salomas</h2>
+          <p class="descrição__texto">Salomas é o melhor do mundo!.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="data:image/jpeg;base64,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" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Android</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Marketing Digital</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Startups</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">HTML & CSS</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Alura</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
